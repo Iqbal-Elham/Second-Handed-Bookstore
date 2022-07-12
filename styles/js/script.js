@@ -13,16 +13,13 @@ document.querySelector('#close-login-btn').onclick = () => {
     loginForm.classList.remove('active');
 }
 
-// function loader(){
-//     document.querySelector('.loader-container').classList.add('active');
-// }
 
-// function fadeOut(){
-//     setTimeout(loader , 4000);
-// }
 $(window).on("load" , function(){
     $(".loader-container").fadeOut("slow");
 })
+
+
+
 $(document).ready(function () {
     // book-slider
 
