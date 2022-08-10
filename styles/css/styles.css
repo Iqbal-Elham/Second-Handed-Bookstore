@@ -128,12 +128,15 @@ nav .btn-light:hover {
 
 #bottom-navbar {
     text-align: center;
+    align-items: center;
     background: var(--color);
+    height: 50px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    font-size: 1.3rem;
     display: none !important;
 }
 
@@ -579,19 +582,13 @@ border-radius: 100% !important;
 {
     border-top: var(--border);
     border-color: #fff;
-    margin-top: 2rem;
     padding: 0 1rem;
-    padding-top: 2.5rem;
-    font-size: 1.4rem;
+    padding-top: 1.3rem;
     color:lightgray;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.footer .credit span
-{
-    color: var(--color);
-}
 
 /* ---------------------- Loader ------- */
 
@@ -603,7 +600,7 @@ border-radius: 100% !important;
     height: 100%;
     width: 100%;
     z-index: 100000;
-    background: #f7f7f7ff;
+    background: #fffcf2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -625,11 +622,6 @@ border-radius: 100% !important;
 /* ----------------------------- Buy books page ---------------------- */
 
 
-#category
-{
-    /* margin-top: 1rem; */
-    /* margin-left: 1rem; */
-}
 
 .card
 {
@@ -695,6 +687,53 @@ border-radius: 100% !important;
 
 }
 
+/* --------------------------------- Create Account ----------------------------- */
+
+
+#container 
+{
+    
+   background: #fff;
+   border-radius: 50px;
+   border: 1px solid;
+   border-color: var(--color);
+}
+
+#leftCtn
+{
+    background-image: linear-gradient(45deg, var(--color) ,#ff9500);
+    border-radius: 50px;
+    padding: 3rem;
+}
+
+#rightCtn
+{
+    padding: 3rem;
+}
+
+#uploadImage
+{
+    border-radius: 90px !important;
+}
+.new_account_header
+{
+    margin-top: 1.6rem;
+    text-align: center;
+    font-size:x-large;  
+}
+.new_account_header .heading span
+{
+    border: 2px solid;
+   border-color: var(--color);
+}
+
+
+
+
+
+
+
+
 /* ----------media queries---------- */
 
 @media (max-width: 768px) {
@@ -702,10 +741,10 @@ border-radius: 100% !important;
         scroll-padding-top: 0;
     }
 
-    /* body {
-        padding-bottom: 6rem;
-    } */
-
+    .login-form-container form {
+        padding: 1rem;  
+        margin: 2rem;
+    }
     #nav2 {
         display: none;
     }
@@ -732,4 +771,9 @@ border-radius: 100% !important;
     #bottom-navbar {
         display: flex !important;
     }
+    .footer .credit
+{
+   
+    margin-bottom: 2.5rem;
+}
 }
